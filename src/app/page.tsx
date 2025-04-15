@@ -68,7 +68,7 @@ export default function Home() {
         {leistungen.map((l, i) => (
           <div key={i} className="grid grid-cols-1 md:grid-cols-2">
             <div
-              className={`w-full h-48 md:min-h-[50vh] relative ${
+              className={`w-full h-64 md:min-h-[50vh] relative ${
                 i % 2 === 1 ? "md:order-1" : "md:order-2"
               }`}
             >
@@ -77,6 +77,7 @@ export default function Home() {
                 alt={`${l.name} Image`}
                 fill
                 objectFit="cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1440px) 33vw, 480px"
               />
             </div>
             <div
