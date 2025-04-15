@@ -15,7 +15,7 @@ export default function Page() {
         <h2 className={textLg}>Geschäftsführer</h2>
         <p>Carsten Ellermeier</p>
         <h2 className={textLg}>Eintragung im Handelsregister</h2>
-        <p>Registergericht: Registergericht Regensburg</p>
+        <p>Registergericht Regensburg</p>
         <p>Registernummer: HRB 21418</p>
         <h2 className={textLg}>Umsatzsteuer ID</h2>
         <p>DE453341392</p>

@@ -14,14 +14,16 @@ export default function PageWrapper({
       className="w-full min-h-screen flex flex-col justify-between"
     >
       <header className="fixed top-0 z-50 w-full flex justify-center p-4">
-        <Image
-          src="/logo.svg"
-          alt="Logo"
-          width={140}
-          height={96}
-          onClick={() => scrollTo("top")}
-          className="cursor-pointer"
-        />
+        <Link href="/">
+          <Image
+            src="/logo.svg"
+            alt="Logo"
+            width={140}
+            height={96}
+            onClick={() => scrollTo("top")}
+            className="cursor-pointer"
+          />
+        </Link>
       </header>
       {children}
       <footer className="mt-16 flex flex-col md:flex-row items-center justify-between gap-4 p-8 bg-[var(--foreground)] text-white">
