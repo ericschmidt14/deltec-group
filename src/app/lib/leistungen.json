@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Automotive",
+    "description": "Unsere Kunden sind namhafte TIER1- und TIER2-Zulieferer, die seit vielen Jahren auf unsere Zuverlässigkeit bauen. Dank unserer langjährigen Erfahrung auf dem Markt sind unsere Produkte bei nahezu allen europäischen Fahrzeugherstellern an Bord. Wir legen höchsten Wert auf die Qualität und Beschaffenheit eines jeden Produktes. Dies umfasst beispielsweise folgende Bereiche:",
+    "solutions": [
+      "Infotainment",
+      "Lichttechnik",
+      "E-Mobility",
+      "Sensorik",
+      "Comfort-Elektronik",
+      "Fahrassistenz-Systeme",
+      "Motorsteuerung"
+    ]
+  },
+  {
+    "name": "Industrie",
+    "description": "Wir sind Ihr zuverlässiger Ansprechpartner, wenn es um qualitativ hochwertige Systeme und Baugruppen geht. Dies umfasst beispielsweise folgende Segmente:",
+    "solutions": [
+      "Mess-Steuer-Regeltechnik",
+      "Lichttechnik",
+      "Motorsteuerung",
+      "Embedded Systems",
+      "Sicherheitstechnik",
+      "Sensorik",
+      "Datenerfassung / -speicherung",
+      "Multimedia / digitale Medien",
+      "Energieerzeugung / -speicherung"
+    ]
+  },
+  {
+    "name": "Medizin",
+    "description": "Höchste Zuverlässigkeit und Langlebigkeit sind die wichtigsten Faktoren in der Medizintechnik, um das Vertrauen zu unseren Kunden gewinnen.",
+    "solutions": ["Labortechnik", "Consumer Produkte"]
+  },
+  {
+    "name": "Energie",
+    "description": "Erneuerbare Energien spielen in vielen Bereichen des täglichen Lebens eine immer zentralere Rolle. Mit uns haben Sie einen leistungsstarken Partner an Ihrer Seite, der sich mit Technologien für Erneuerbare Energien beschäftigt. Hier befassen wir uns beispielsweise mit folgenden Applikationen:",
+    "solutions": [
+      "Mess-Steuer-Regeltechnik",
+      "Sonnenenergie / Photovoltaik",
+      "Sensorik",
+      "Datenerfassung / -speicherung",
+      "E-Mobility",
+      "Energieerzeugung / -speicherung"
+    ]
+  }
+]
