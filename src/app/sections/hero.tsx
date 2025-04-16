@@ -1,3 +1,4 @@
+import { Button } from "@mantine/core";
 import { IconArrowDown } from "@tabler/icons-react";
 import Image from "next/image";
 import { textTitle } from "../lib/styles";
@@ -11,11 +12,14 @@ export default function HeroSection() {
         <h1 className={`${textTitle} max-w-[660px]`}>
           High Performance Electronics Manufacturing
         </h1>
-        <IconArrowDown
-          size={32}
-          className="cursor-pointer"
+        <Button
+          color="black"
+          variant="light"
+          rightSection={<IconArrowDown size={16} className="cursor-pointer" />}
           onClick={() => scrollTo("about", -4)}
-        />
+        >
+          Mehr erfahren
+        </Button>
       </div>
     </div>
   );
