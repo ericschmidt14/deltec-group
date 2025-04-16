@@ -1,9 +1,12 @@
 import { Button } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { IconArrowDown } from "@tabler/icons-react";
 import { textTitle } from "../lib/styles";
 import { scrollTo } from "../lib/utils";
 
 export default function HeroSection() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <div
       id="hero"
@@ -11,13 +14,13 @@ export default function HeroSection() {
     >
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/video/hero.mov"
+        src={`/video${isMobile ? "/hero-mobile.mp4" : "/hero.mp4"}`}
         autoPlay
         loop
         muted
         playsInline
       />
-      <div className="absolute z-1 inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/60 to-white/0" />
+      <div className="absolute z-1 inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/80 to-white/0" />
       <div className="absolute z-10 inset-0 flex flex-col gap-8 items-center justify-center text-center">
         <h1 className={`${textTitle} max-w-[660px]`}>
           High Performance Electronics Manufacturing
