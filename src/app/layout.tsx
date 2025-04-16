@@ -1,12 +1,12 @@
 import { createTheme, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Poppins } from "next/font/google";
 import PageWrapper from "./components/wrapper";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const font = Poppins({
+  weight: ["400", "600"],
   subsets: ["latin"],
 });
 
@@ -44,7 +44,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#011e1f" />
       </head>
-      <body className={`${geistSans.variable} antialiased`}>
+      <body className={`${font.className} antialiased`}>
         <MantineProvider theme={theme}>
           <PageWrapper>{children}</PageWrapper>
         </MantineProvider>

@@ -39,7 +39,7 @@ export default function HeroSection() {
       <div className="absolute z-1 inset-0 w-full h-full bg-linear-[210deg] from-[var(--light)] via-transparent to-[var(--main)]" />
       <div className="absolute z-10 inset-0 flex flex-col gap-8 items-center justify-center text-center">
         <h1
-          className={`${textTitle} text-white text-shadow-black/20 text-shadow-lg max-w-[660px] px-4`}
+          className={`${textTitle} text-white text-shadow-black/20 text-shadow-lg max-w-[720px] px-4`}
         >
           High Performance Electronics Manufacturing
         </h1>
