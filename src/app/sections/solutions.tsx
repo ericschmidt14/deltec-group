@@ -24,7 +24,7 @@ export default function SolutionSection() {
       {solutions.map((l, i) => (
         <div key={i} className="group grid grid-cols-1 md:grid-cols-2">
           <div
-            className={`w-full h-64 md:min-h-[50vh] relative overflow-hidden group ${
+            className={`w-full min-h-64 md:min-h-[500px] md:h-full relative overflow-hidden group ${
               i % 2 === 1 ? "md:order-1" : "md:order-2"
             }`}
           >

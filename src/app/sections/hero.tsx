@@ -28,7 +28,7 @@ export default function HeroSection() {
   return (
     <div
       id="hero"
-      className="w-full h-[720px] min-h-[66vh] relative overflow-hidden"
+      className="w-full h-[720px] min-h-[80vh] relative overflow-hidden"
     >
       <video
         ref={videoRef}
