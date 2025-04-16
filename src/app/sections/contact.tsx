@@ -4,7 +4,7 @@ import { textXl } from "../lib/styles";
 
 export default function ContactSection() {
   return (
-    <div className="py-48 flex flex-col justify-center items-center gap-4 md:gap-8 bg-[var(--foreground)] text-white">
+    <div className="px-8 py-48 flex flex-col justify-center items-center gap-4 md:gap-8 bg-[var(--foreground)] text-white">
       <h3 className={textXl}>Kontaktieren Sie uns.</h3>
       <p className="max-w-[660px] text-center text-white/66">
         Wenn Sie sich für eine unserer Dienstleistungen interessieren und mit

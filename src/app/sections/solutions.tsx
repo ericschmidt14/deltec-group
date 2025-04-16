@@ -29,13 +29,13 @@ export default function SolutionSection() {
             }`}
           >
             <Image
-              src={`/img/${i + 1}.jpg`}
-              alt={`${l.name} Image`}
+              src={`/img/${l.name}.jpg`}
+              alt={`${l.name} Bild`}
               className="transition-transform duration-500 ease-in-out group-hover:scale-105"
               layout="fill"
               objectFit="cover"
               objectPosition="bottom center"
-              sizes="(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 480px"
+              // sizes="(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 480px"
             />
           </div>
           <div
