@@ -1,11 +1,29 @@
-import { Button } from "@mantine/core";
+import { ActionIcon, Button } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
-import { IconArrowDown } from "@tabler/icons-react";
+import {
+  IconArrowDown,
+  IconPlayerPause,
+  IconPlayerPlay,
+} from "@tabler/icons-react";
+import { useRef, useState } from "react";
 import { textTitle } from "../lib/styles";
 import { scrollTo } from "../lib/utils";
 
 export default function HeroSection() {
   const isMobile = useMediaQuery("(max-width: 768px)");
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const togglePlayback = () => {
+    if (!videoRef.current) return;
+
+    if (isPlaying) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
 
   return (
     <div
@@ -13,6 +31,7 @@ export default function HeroSection() {
       className="w-full h-[720px] min-h-[66vh] relative overflow-hidden"
     >
       <video
+        ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
         src={`/video${isMobile ? "/hero-mobile.mp4" : "/hero.mp4"}`}
         autoPlay
@@ -25,14 +44,29 @@ export default function HeroSection() {
         <h1 className={`${textTitle} max-w-[660px]`}>
           High Performance Electronics Manufacturing
         </h1>
-        <Button
-          color="black"
-          variant="light"
-          rightSection={<IconArrowDown size={16} className="cursor-pointer" />}
-          onClick={() => scrollTo("about", -4)}
-        >
-          Mehr erfahren
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button
+            color="black"
+            variant="light"
+            leftSection={<IconArrowDown size={16} className="cursor-pointer" />}
+            onClick={() => scrollTo("about", -4)}
+          >
+            Mehr erfahren
+          </Button>
+          <ActionIcon
+            variant="transparent"
+            color="black"
+            size="lg"
+            onClick={togglePlayback}
+            aria-label={isPlaying ? "Pause" : "Play"}
+          >
+            {isPlaying ? (
+              <IconPlayerPause size={20} />
+            ) : (
+              <IconPlayerPlay size={20} />
+            )}
+          </ActionIcon>
+        </div>
       </div>
     </div>
   );
