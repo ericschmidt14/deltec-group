@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className={`px-8 py-24 bg-[var(--light)] flex items-center gap-8`}
+      className="px-8 py-24 bg-[var(--light)] flex items-center gap-8"
     >
       <div className="max-w-[1440px] mx-auto flex flex-col gap-4">
         <h2
