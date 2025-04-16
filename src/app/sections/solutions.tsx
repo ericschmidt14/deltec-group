@@ -33,6 +33,7 @@ export default function SolutionSection() {
               alt={`${l.name} Image`}
               fill
               objectFit="cover"
+              objectPosition="bottom center"
               sizes="(max-width: 768px) 100vw, (max-width: 1440px) 33vw, 480px"
             />
           </div>
