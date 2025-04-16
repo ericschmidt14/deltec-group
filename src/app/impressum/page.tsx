@@ -10,7 +10,7 @@ export default function Page() {
     <section>
       <article>
         <h1 className={textXl}>Impressum</h1>
-        <p>DELTEC Automotive GmbH & Co. KG</p>
+        <p>DELTEC Group GmbH</p>
         <p>Dr.-Georg-Schäfer-Straße 1</p>
         <p>D-93437 Furth im Wald</p>
         <h2 className={textLg}>Kontakt</h2>

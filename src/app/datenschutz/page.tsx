@@ -31,7 +31,7 @@ export default function Page() {
           möglich.
         </p>
         <h2 className={textLg}>Kontakt</h2>
-        <p>DELTEC Automotive GmbH & Co. KG</p>
+        <p>DELTEC Group GmbH</p>
         <p>Dr.-Georg-Schäfer-Straße 1</p>
         <p>D-93437 Furth im Wald</p>
         <p>Telefon: +49 (0) 9973 8455-0</p>
