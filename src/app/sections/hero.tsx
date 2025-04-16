@@ -20,7 +20,7 @@ export default function HeroSection() {
         muted
         playsInline
       />
-      <div className="absolute z-1 inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/80 to-white/0" />
+      <div className="absolute z-1 inset-0 w-full h-full bg-gradient-to-r from-white/20 via-white/60 to-white/20 md:from-white/0 md:via-white/80 md:to-white/0" />
       <div className="absolute z-10 inset-0 flex flex-col gap-8 items-center justify-center text-center">
         <h1 className={`${textTitle} max-w-[660px]`}>
           High Performance Electronics Manufacturing
