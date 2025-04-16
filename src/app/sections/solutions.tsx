@@ -5,7 +5,7 @@ import {
   IconSunElectricity,
   IconVaccineBottle,
 } from "@tabler/icons-react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { JSX } from "react";
 import solutions from "../lib/solutions.json";
 import { textMd, textXl } from "../lib/styles";
@@ -31,8 +31,8 @@ export default function SolutionSection() {
             <Image
               src={`/img/${i + 1}.jpg`}
               alt={`${l.name} Image`}
-              fill
               className="transition-transform duration-500 ease-in-out group-hover:scale-105"
+              layout="fill"
               objectFit="cover"
               objectPosition="bottom center"
               sizes="(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 480px"
