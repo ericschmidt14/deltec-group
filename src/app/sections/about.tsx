@@ -2,11 +2,11 @@ import { textLg } from "../lib/styles";
 
 export default function AboutSection() {
   return (
-    <section
+    <div
       id="about"
       className={`px-8 py-24 bg-[var(--light)] flex items-center gap-8`}
     >
-      <div className="flex flex-col gap-4">
+      <div className="max-w-[1440px] mx-auto flex flex-col gap-4 hyphens-auto">
         <h2
           className={`${textLg} font-bold tracking-tighter text-[var(--dark)]`}
         >
@@ -24,6 +24,6 @@ export default function AboutSection() {
           Fertigungstechnologien in wirtschaftlicher Spitzenqualität.
         </p>
       </div>
-    </section>
+    </div>
   );
 }

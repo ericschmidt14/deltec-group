@@ -5,7 +5,7 @@ import { scrollTo } from "../lib/utils";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="w-full h-[720px] min-h-[66vh] relative">
+    <div id="hero" className="w-full h-[720px] min-h-[66vh] relative">
       <Image src="/img/hero.jpg" alt="Hero" fill objectFit="cover" />
       <div className="absolute inset-0 flex flex-col gap-8 items-center justify-center text-center">
         <h1 className={`${textTitle} max-w-[660px]`}>
@@ -17,6 +17,6 @@ export default function HeroSection() {
           onClick={() => scrollTo("about", -4)}
         />
       </div>
-    </section>
+    </div>
   );
 }
