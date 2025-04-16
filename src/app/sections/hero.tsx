@@ -41,7 +41,7 @@ export default function HeroSection() {
       />
       <div className="absolute z-1 inset-0 w-full h-full bg-gradient-to-r from-white/20 via-white/60 to-white/20 md:from-white/0 md:via-white/80 md:to-white/0" />
       <div className="absolute z-10 inset-0 flex flex-col gap-8 items-center justify-center text-center">
-        <h1 className={`${textTitle} max-w-[660px] px-4`}>
+        <h1 className={`${textTitle} text-black/66 max-w-[660px] px-4`}>
           High Performance Electronics Manufacturing
         </h1>
         <div className="flex items-center gap-2">
@@ -61,9 +61,9 @@ export default function HeroSection() {
             aria-label={isPlaying ? "Pause" : "Play"}
           >
             {isPlaying ? (
-              <IconPlayerPause size={20} />
+              <IconPlayerPause size={16} />
             ) : (
-              <IconPlayerPlay size={20} />
+              <IconPlayerPlay size={16} />
             )}
           </ActionIcon>
         </div>
