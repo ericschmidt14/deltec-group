@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="theme-color" content="#114749" />
+        <meta name="theme-color" content="#011e1f" />
       </head>
       <body className={`${geistSans.variable} antialiased`}>
         <MantineProvider theme={theme}>
