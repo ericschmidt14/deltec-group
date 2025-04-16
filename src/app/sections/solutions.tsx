@@ -35,11 +35,11 @@ export default function SolutionSection() {
               className="transition-transform duration-500 ease-in-out group-hover:scale-105"
               objectFit="cover"
               objectPosition="bottom center"
-              sizes="(max-width: 768px) 100vw, (max-width: 1440px) 33vw, 480px"
+              sizes="(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 480px"
             />
           </div>
           <div
-            className={`flex flex-col justify-center gap-4 p-8 ${
+            className={`flex flex-col justify-center gap-4 p-8 md:py-16 ${
               i % 2 === 1 ? "md:order-2" : "md:order-1"
             }`}
           >
