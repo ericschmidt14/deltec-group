@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import { textLg, textMd, textXl } from "../lib/styles";
+
+export const metadata: Metadata = {
+  title: "Impressum – DELTEC GROUP",
+};
 
 export default function Page() {
   return (
