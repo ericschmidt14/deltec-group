@@ -7,7 +7,7 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { JSX } from "react";
-import leistungen from "../lib/leistungen.json";
+import solutions from "../lib/solutions.json";
 import { textMd, textXl } from "../lib/styles";
 
 export default function SolutionSection() {
@@ -21,10 +21,10 @@ export default function SolutionSection() {
   return (
     <section className={`py-16`}>
       <h2 className={`${textXl} text-center p-8`}>Unsere Leistungen</h2>
-      {leistungen.map((l, i) => (
-        <div key={i} className="grid grid-cols-1 md:grid-cols-2">
+      {solutions.map((l, i) => (
+        <div key={i} className="group grid grid-cols-1 md:grid-cols-2">
           <div
-            className={`w-full h-64 md:min-h-[50vh] relative ${
+            className={`w-full h-64 md:min-h-[50vh] relative overflow-hidden group ${
               i % 2 === 1 ? "md:order-1" : "md:order-2"
             }`}
           >
@@ -32,6 +32,7 @@ export default function SolutionSection() {
               src={`/img/${i + 1}.jpg`}
               alt={`${l.name} Image`}
               fill
+              className="transition-transform duration-500 ease-in-out group-hover:scale-105"
               objectFit="cover"
               objectPosition="bottom center"
               sizes="(max-width: 768px) 100vw, (max-width: 1440px) 33vw, 480px"
@@ -42,7 +43,7 @@ export default function SolutionSection() {
               i % 2 === 1 ? "md:order-2" : "md:order-1"
             }`}
           >
-            <header className="flex items-center gap-2 text-[var(--main)]">
+            <header className="flex items-center gap-1 text-[var(--main)]">
               {icons[l.name]}
               <h3 className="text-4xl font-bold tracking-tighter">{l.name}</h3>
             </header>
