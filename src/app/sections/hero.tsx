@@ -2,8 +2,8 @@ import { ActionIcon, Button } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import {
   IconArrowDown,
-  IconPlayerPause,
-  IconPlayerPlay,
+  IconPlayerPauseFilled,
+  IconPlayerPlayFilled,
 } from "@tabler/icons-react";
 import { useRef, useState } from "react";
 import { textTitle } from "../lib/styles";
@@ -63,9 +63,9 @@ export default function HeroSection() {
             aria-label={isPlaying ? "Pause" : "Play"}
           >
             {isPlaying ? (
-              <IconPlayerPause size={16} />
+              <IconPlayerPauseFilled size={16} />
             ) : (
-              <IconPlayerPlay size={16} />
+              <IconPlayerPlayFilled size={16} />
             )}
           </ActionIcon>
         </div>
