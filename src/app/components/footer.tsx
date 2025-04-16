@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mt-16 flex flex-col md:flex-row items-center justify-between gap-4 p-8 bg-[var(--foreground)] text-white/50">
+    <footer className="flex flex-col md:flex-row items-center justify-between gap-4 p-8 bg-[var(--foreground)] text-white/66">
       <p className="hidden md:block">© 2025 DELTEC GROUP</p>
       <Link href="/">
         <Image

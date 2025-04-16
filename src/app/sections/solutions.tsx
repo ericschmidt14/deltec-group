@@ -19,7 +19,7 @@ export default function SolutionSection() {
   };
 
   return (
-    <section className="py-16">
+    <section className="pt-16">
       <h2 className={`${textXl} text-center p-8`}>Unsere Leistungen</h2>
       {solutions.map((l, i) => (
         <div key={i} className="group grid grid-cols-1 md:grid-cols-2">
