@@ -8,7 +8,7 @@ export default function ContactSection() {
       <h3 className={textXl}>Kontaktieren Sie uns.</h3>
       <p className="max-w-[660px] text-center text-white/66">
         Wenn Sie sich für eine unserer Dienstleistungen interessieren und mit
-        uns in Kontakt treten wollen, freuen wir uns über ihre Kontaktaufnahme.
+        uns in Kontakt treten wollen, freuen wir uns über Ihre Kontaktaufnahme.
       </p>
       <div className="flex flex-col md:flex-row gap-2">
         <Button
