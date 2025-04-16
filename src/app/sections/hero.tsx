@@ -36,17 +36,17 @@ export default function HeroSection() {
         muted
         playsInline
       />
-      <div className="absolute z-1 inset-0 w-full h-full bg-gradient-to-bl from-[var(--light)] to-white/10" />
+      <div className="absolute z-1 inset-0 w-full h-full bg-linear-[210deg] from-[var(--light)] via-transparent to-[var(--main)]" />
       <div className="absolute z-10 inset-0 flex flex-col gap-8 items-center justify-center text-center">
         <h1
-          className={`${textTitle} text-shadow-white/10 text-shadow-lg max-w-[660px] px-4`}
+          className={`${textTitle} text-white text-shadow-black/20 text-shadow-lg max-w-[660px] px-4`}
         >
           High Performance Electronics Manufacturing
         </h1>
         <div className="flex items-center gap-2">
           <Button
             variant="light"
-            color="black"
+            color="white"
             leftSection={<IconArrowDown size={16} className="cursor-pointer" />}
             onClick={() => scrollTo("about", -4)}
           >
@@ -54,7 +54,7 @@ export default function HeroSection() {
           </Button>
           <ActionIcon
             variant="transparent"
-            color="black"
+            color="white"
             size="lg"
             onClick={togglePlayback}
             aria-label={isPlaying ? "Pause" : "Play"}
