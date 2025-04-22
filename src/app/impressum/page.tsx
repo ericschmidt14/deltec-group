@@ -15,7 +15,6 @@ export default function Page() {
         <p>D-93437 Furth im Wald</p>
         <h2 className={textLg}>Kontakt</h2>
         <p>Telefon: +49 (0) 9973 8455-0</p>
-        <p>Telefax: +49 (0) 9973 8455-110</p>
         <p>E-Mail: info[@]deltecgroup.com</p>
         <h2 className={textLg}>Geschäftsführer</h2>
         <p>Carsten Ellermeier</p>

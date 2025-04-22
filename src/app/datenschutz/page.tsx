@@ -35,7 +35,6 @@ export default function Page() {
         <p>Dr.-Georg-Schäfer-Straße 1</p>
         <p>D-93437 Furth im Wald</p>
         <p>Telefon: +49 (0) 9973 8455-0</p>
-        <p>Telefax: +49 (0) 9973 8455-110</p>
         <p>E-Mail: info[@]deltecgroup.com</p>
       </article>
       <article>
