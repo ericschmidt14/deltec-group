@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row items-center justify-between gap-4 px-8 py-2 bg-[var(--foreground)] text-white/66">
-      <p className="hidden md:block">© 2025 DELTEC GROUP</p>
       <Link href="/">
         <Image
           src="/logo_white.svg"
@@ -14,9 +13,10 @@ export default function Footer() {
           className="cursor-pointer"
         />
       </Link>
-      <nav className="flex gap-4">
+      <nav className="flex gap-4 md:gap-8">
         <Link href="/impressum">Impressum</Link>
         <Link href="/datenschutz">Datenschutz</Link>
+        <Link href="/downloads">Downloads</Link>
       </nav>
     </footer>
   );
