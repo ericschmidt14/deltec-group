@@ -16,6 +16,7 @@ export default function Footer() {
       <nav className="flex gap-4 md:gap-8">
         <Link href="/impressum">Impressum</Link>
         <Link href="/datenschutz">Datenschutz</Link>
+        <Link href="/barrierefreiheit">Barrierefreiheit</Link>
         <Link href="/downloads">Downloads</Link>
       </nav>
     </footer>

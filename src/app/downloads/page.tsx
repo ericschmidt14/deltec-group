@@ -9,8 +9,16 @@ export const metadata: Metadata = {
 
 const downloads = [
   {
-    name: "Einkaufsbedingungen (PDF)",
+    name: "Einkaufsbedingungen",
     href: "/downloads/DELTEC_Group_GmbH_Einkaufsbedingungen.pdf",
+  },
+  {
+    name: "Verkaufsbedingungen",
+    href: "/downloads/DELTEC_Group_GmbH_Verkaufsbedingungen.pdf",
+  },
+  {
+    name: "Terms and Conditions of Sale",
+    href: "/downloads/DELTEC_Group_GmbH_Terms&Conditions.pdf",
   },
 ];
 
@@ -19,9 +27,9 @@ export default function Page() {
     <section>
       <article>
         <h1 className={textXl}>Downloads</h1>
-        <p>Hier finden Sie alle Dokumente zum Download.</p>
+        <p>Hier finden Sie alle Dokumente als PDF zum Download.</p>
         {downloads.map((d, i) => (
-          <div key={i} className="flex flex-col items-center gap-2 py-8">
+          <div key={i} className="flex flex-col items-center gap-2 py-4">
             <p className={textMd}>{d.name}</p>
             <div className="flex gap-4">
               <Button

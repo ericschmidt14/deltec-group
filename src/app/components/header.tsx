@@ -7,7 +7,7 @@ export default function Header() {
     <header className="fixed top-0 z-40 w-full flex justify-center px-4">
       <Link
         href="/"
-        className="bg-white/20 px-4 pt-2 shadow-xl backdrop-blur-md"
+        className="bg-white/50 px-4 pt-2 shadow-xl backdrop-blur-md"
       >
         <Image
           src="/logo.svg"
