@@ -13,7 +13,7 @@ export default function Footer() {
           className="cursor-pointer"
         />
       </Link>
-      <nav className="flex gap-4 md:gap-8">
+      <nav className="flex flex-col sm:flex-row items-center gap-4 md:gap-8">
         <Link href="/impressum">Impressum</Link>
         <Link href="/datenschutz">Datenschutz</Link>
         <Link href="/barrierefreiheit">Barrierefreiheit</Link>
