@@ -20,6 +20,16 @@ const downloads = [
     name: "Terms and Conditions of Sale",
     href: "/downloads/DELTEC_Group_GmbH_Terms&Conditions.pdf",
   },
+  {
+    name: "Zertifikat ISO 14001 : 2015",
+    desc: "Umweltmanagementsystem",
+    href: "/downloads/DELTEC_Group_GmbH_ISO_14001_2015_de.pdf",
+  },
+  {
+    name: "Certificate ISO 14001 : 2015",
+    desc: "Environmental Management System",
+    href: "/downloads/DELTEC_Group_GmbH_ISO_14001_2015_en.pdf",
+  },
 ];
 
 export default function Page() {
@@ -31,6 +41,7 @@ export default function Page() {
         {downloads.map((d, i) => (
           <div key={i} className="flex flex-col items-center gap-2 py-4">
             <p className={textMd}>{d.name}</p>
+            {d.desc && <p className="-mt-2">{d.desc}</p>}
             <div className="flex gap-4">
               <Button
                 component="a"
