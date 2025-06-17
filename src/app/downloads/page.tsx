@@ -13,12 +13,16 @@ const downloads = [
     href: "/downloads/DELTEC_Group_GmbH_Einkaufsbedingungen.pdf",
   },
   {
+    name: "Terms & Conditions of Purchase",
+    href: "/downloads/DELTEC_Group_GmbH_Terms&Conditions_Purchase.pdf",
+  },
+  {
     name: "Verkaufsbedingungen",
     href: "/downloads/DELTEC_Group_GmbH_Verkaufsbedingungen.pdf",
   },
   {
-    name: "Terms and Conditions of Sale",
-    href: "/downloads/DELTEC_Group_GmbH_Terms&Conditions.pdf",
+    name: "Terms & Conditions of Sale",
+    href: "/downloads/DELTEC_Group_GmbH_Terms&Conditions_Sale.pdf",
   },
   {
     name: "Zertifikat ISO 14001 : 2015",
